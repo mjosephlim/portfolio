@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+    font-family:'Josefin Sans', sans-serif;
+    margin:0px;
+    color:hsl(0, 0%, 15%);
+}
+
+.container{
+    display: flex;
+    min-height:100vh;
+}
+
+.left{
+    padding: 0 80px ;
+    width:58% ;
+}
+
+.inner-container{
+    max-width: 60vw;
+}
+.right{
+    width:42%;
+}
+
+.bg-image{
+    background-image:url('images/hero-desktop-me.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.logo{
+    margin:100px 0px;
+    width: 200px;
+}
+
+.bg-mobile{
+    display:none;
+}
+h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transform:translateX(-100%);
+    font-weight:200;
+    animation: comeinleft 1.5s ease forwards;
+}
+
+@keyframes comeinleft{
+ to{
+     transform: translateX(0);
+ }
+}
+
+h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight:200;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-weight:600;
+}
+
+h1 span{
+    font-weight:600;    
+}
+
+.text-primary{
+    color:hsl(342, 89%, 28%);
+}
+
+.text-pop{
+    color:hsl(342, 73%, 49%);
+}
+
+p{
+    font-size:26px;
+    line-height:26px;
+    transform:translateX(200%);
+    animation: comeinright 1.5s ease forwards;
+}
+
+@keyframes comeinright{
+    to{
+        transform:translateX(0);
+    }
+}
+
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width:300px;
+    height:auto;
+    transition: 0.3s;
+    display:flex;
+    text-align: center;
+    border-radius: 70px;
+    margin:10px;
+}
+  
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 hsl(342, 89%, 28%);
+  }
+  
+  .card-container {
+    padding: 0px 1px;
+    display:flex;
+    text-align: center;
+   
+    
+  }
+
+  .row{
+    display:flex;
+    flex-direction: row;
+  }
+  
+
+  @media screen and (max-width: 600px){
+      .left{
+          width: 100%;
+          padding:40px;
+          align-content:center;
+      }
+
+      .right{
+          display:none;
+      }
+
+      h1{
+          font-size:40px;
+      }
+
+      h2{
+          font-size:30px;
+      }
+
+      h3,p{
+          font-size:20px;
+      }
+      .bg-mobile{
+          display:block;
+          margin-left: 0px;
+          margin-right: -40px  ;
+          width:calc(100%px);
+      }
+
+      .row{
+          flex-direction: column;
+      }
+      .card{
+          max-width:300px;
+      }
+      
+  }
