@@ -43,6 +43,10 @@ body{
     justify-content: right;
 }
 
+#contacts{
+    color:white;
+    padding:80px;
+}
 
 .bg-image{
     background-image:url('images/hero-desktop-me.jpg');
@@ -51,7 +55,7 @@ body{
 }
 
 .bg-image-right{
-    background-image:url('images/hero-desktop-me.jpg');
+    background-color: hsl(342, 73%, 49%);
     background-size: cover;
     background-position: center center;
 
@@ -119,7 +123,7 @@ h1 span{
 p{
     font-size:26px;
     line-height:26px;
-    transform:translateX(200%);
+    transform:translateX(90%);
     animation: comeinright 1.5s ease forwards;
 }
 
@@ -215,6 +219,14 @@ p{
         padding:0px;
         width: 100vw;
     }
+
+    .fa-angle-double-right{
+        display:none ;
+      }
+    
+      .fa-angle-double-left{
+       display:none;
+      }
 
     .bg-mobile{
         display: block;
