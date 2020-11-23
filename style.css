@@ -43,7 +43,7 @@ body{
     justify-content: right;
 }
 
-#contacts{
+.contacts{
     color:white;
     padding:80px;
 }
@@ -170,6 +170,19 @@ p{
     flex-direction: row;
   }
 
+  .row i{
+      padding:20px;
+      transition: ease-in .4s ;
+
+  }
+
+  #contact-rows a{
+      color:white;
+  }
+
+  .row i:hover{
+    transform: translateY(-10px);
+  }
   .float-right{
       float:right;
       position: relative;
@@ -183,6 +196,14 @@ p{
     overflow: hidden;
     z-index: 1;
 }
+
+i{
+    font-size:90px;
+}
+
+
+
+
   .fa-angle-double-right{
     font-size:90px;
     color: hsl(342, 89%, 28%);
