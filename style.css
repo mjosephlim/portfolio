@@ -85,6 +85,11 @@ body{
 .bg-mobile{
     display:none;
 }
+
+.contacts-mobile{
+    display: none;
+}
+
 h1{
     font-size: 80px;
     text-transform: uppercase;
@@ -245,7 +250,7 @@ i{
         display:none ;
       }
     
-      .fa-angle-double-left{
+    .fa-angle-double-left{
        display:none;
       }
 
@@ -253,6 +258,32 @@ i{
         display: block;
         padding-left: 0px;
         width:calc(100%+80px);
+    }
+
+    .contacts-mobile{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        background-color: hsl(342, 73%, 49%);
+        width:calc(100%+80px);
+        align-items: center;
+    }
+
+    .contacts{
+        color:white;
+        padding:40px 0px 0px 0px;
+    }
+
+    i{
+
+        font-size:40px;
+        padding:0px;
+    }
+    
+    #contactme{
+        font-size:40px;
+        padding: 4px;
+        text-align: center;
     }
 
     .logo{
@@ -286,6 +317,10 @@ i{
 
     .row{
         flex-direction: column;
+    }
+
+    #contact-rows{
+        flex-direction: row;
     }
 }   
 @keyframes comeinleft{
