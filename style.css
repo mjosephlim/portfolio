@@ -235,17 +235,7 @@ i{
   .fa-angle-double-left:hover{
     color:hsl(342, 73%, 49%);
 }
- 
-  @media screen and (max-width:500px){
-    .right,.left-ab{
-        display:none;
-    }
-
-    .left,.right-ab{
-        padding:0px;
-        width: 100vw;
-    }
-
+ @media screen and(min-width:500px){
     .fa-angle-double-right{
         display:none ;
         opacity: 0;
@@ -257,6 +247,18 @@ i{
         opacity: 0;
         pointer-events: none;
       }
+ }
+  @media screen and (max-width:500px){
+    .right,.left-ab{
+        display:none;
+    }
+
+    .left,.right-ab{
+        padding:0px;
+        width: 100vw;
+    }
+
+    
 
     .bg-mobile{
         display: block;
