@@ -45,8 +45,26 @@ body{
 
 .contacts{
     color:white;
-    padding:80px;
+   padding:0px 0px 0px 60px;
 }
+
+#email-row{
+    padding:0px 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#email-row h4,i{
+    color:white;
+   
+}
+
+#email-row i{
+    font-size:50px;
+}
+
 
 .bg-image{
     background-image:url('images/hero-desktop-me.jpg');
@@ -223,6 +241,7 @@ i{
     transition: ease-in 0.5s;
     transform: translateX(1000%);
     animation: comeinright 1.5s ease-in forwards;
+    padding:0px 0px 0px 0px;
   }
 
 
@@ -233,22 +252,10 @@ i{
   }
 
   .fa-angle-double-left:hover{
-    color:hsl(342, 73%, 49%);
+    color:hsl(0, 0%, 100%);
 }
- @media screen and(min-width:500px){
-    .fa-angle-double-right{
-        display:none ;
-        opacity: 0;
-        pointer-events: none;
-      }
-    
-    .fa-angle-double-left{
-        display:none ;
-        opacity: 0;
-        pointer-events: none;
-      }
- }
-  @media screen and (max-width:500px){
+ 
+  @media screen and (max-width:600px){
     .right,.left-ab{
         display:none;
     }
@@ -258,7 +265,13 @@ i{
         width: 100vw;
     }
 
+    .fa-angle-double-right{
+        display:none ;
+      }
     
+    .fa-angle-double-left{
+       display:none;
+      }
 
     .bg-mobile{
         display: block;
@@ -280,6 +293,7 @@ i{
         padding:40px 0px 0px 0px;
     }
 
+    
     i{
 
         font-size:40px;
@@ -328,6 +342,8 @@ i{
     #contact-rows{
         flex-direction: row;
     }
+
+    
 }   
 @keyframes comeinleft{
     to{
@@ -361,4 +377,93 @@ i{
     overflow: hidden;
     z-index: 10;
     pointer-events: none;
+}
+
+.pill-primary{
+    color: ivory;
+background-color: hsl(342, 89%, 28%);
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pill-light{
+    color: ivory;
+background-color: hsl(342, 89%, 39%);
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pill-lighter{
+    color: ivory;
+background-color: hsl(342, 89%, 55%);
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pill-lightest{
+    color: ivory;
+background-color: hsl(342, 89%, 75%);
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tech-stack{
+    height: 20px;
+    border:20px;
+    border-color: indianred;
+    width: auto;
+    padding:20px 20px;
+    margin:30px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.tech-stack span{
+    font-size:15px;
+}
+
+#force-wrap{
+    flex-wrap: wrap;
+}
+
+#button-row{
+    padding:60px;
 }
