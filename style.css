@@ -236,7 +236,7 @@ i{
     color:hsl(342, 73%, 49%);
 }
  
-  @media screen and (max-width:768px){
+  @media screen and (max-width:600px){
     .right,.left-ab{
         display:none;
     }
