@@ -460,6 +460,13 @@ background-color: hsl(342, 89%, 75%);
     font-size:15px;
 }
 
+.tech-stack p{
+        font-size:22px;
+        line-height:26px;
+        transform:translateX(-45%);
+        animation: comeinright 2.5s ease forwards;
+}
+
 #force-wrap{
     flex-wrap: wrap;
 }
